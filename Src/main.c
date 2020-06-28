@@ -136,7 +136,6 @@ int main(void)
           if(new_world[i][j] == 0){
             GPIOB->ODR ^= (1 << j);
           }
-         //GPIOB->ODR ^= (1 << j);
         }
         HAL_Delay(1);
         MX_GPIO_Init(); 
